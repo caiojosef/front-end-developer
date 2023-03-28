@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 25%;
+    background-color: lightgray;
+    padding: 10px 20px 0px;
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    min-height: 150px;
+}
+
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    min-height: 150px;
+}
+
+table{
+    box-shadow: 19px 0px 13px -6px rgba(0,0,0,0.1);
+    border: 1px solid black;
+}
+
+table thead tr{
+background-color: black;
+color: white;
+}
+table tfoot td{
+background-color: lightgray;
+}
+table tbody tr:nth-child(even) td{
+background-color: rgb(163, 159, 159);
+}
+table tbody tr:hover td {
+background-color: rgb(163, 159, 159);
+cursor: pointer;
+}

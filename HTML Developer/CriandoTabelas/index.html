@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Tabelas - Dio</title>
+    <style>
+        table{
+            box-shadow: 19px 0px 13px -6px rgba(0,0,0,0.1);
+            border: 1px solid black;
+        }
+       table thead th{
+        background-color: black;
+        color: white;
+       }
+       table tfoot td{
+        background-color: lightgray;
+       }
+       table tbody tr:nth-child(even) td{
+        background-color: rgb(163, 159, 159);
+       }
+       table tbody tr:hover td {
+        background-color: rgb(163, 159, 159);
+        cursor: pointer;
+       }
+
+    </style>
+</head>
+
+<body>
+    <table summary="Descrição da tabela para acessibilidade"  width="250" align="center" cellspacing="10"
+        cellpadding="15">
+        <caption>Tabela de Nome e idade</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Minha tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome Completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Caio</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>joão</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Manoela</td>
+                <td>28</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

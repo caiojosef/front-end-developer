@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+
+<body>
+    <input list="browsers" name="search" type="search">
+    <datalist id="browsers">
+        <option>Google Chrome</option>
+        <option>Mozila Firefox</option>
+        <option>Microsoft Edge</option>
+        <option>Safari</option>
+        <option>Opera</option>
+    </datalist>
+    <hr>
+    <select name="Browsers" id="">
+        <option value="">Selecione um navegador</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="firefox">Mozila Firefox</option>
+        <option value="edge">Microsoft Edge</option>
+        <option value="safari">Safari</option>
+        <option value="opera">Opera</option>
+    </select>
+    <hr>
+
+    <p>
+        Para copiar essa informção, pressione <kbd>CTRL</kbd>+ <kbd>C</kbd>
+    <p>Para trocar o fundo de um elemento, utilize o comando <code>background-color</code></p>
+    <p>Comando completo de alterar cor de fundo:</p>
+    <pre>
+            <code>
+                code {
+                    background-color: #f1f1f1;
+                    color: red;
+                }
+
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <details>
+        <summary>
+            Como troco a cor de fundo de um elemento?
+        </summary>
+        <p>Para executar essa ação, utilize o comando backgruound-color no CSS</p>
+    </details>
+    <hr>
+    <meter>
+
+    </meter>
+    <progress max="1000" min="0" value="25">
+    </progress>
+<hr>
+    <input type="text" id="busca"><br>
+
+    <p id="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe illo dolorum adipisci quasi, expedita dolore veritatis repudiandae consectetur iusto molestiae officiis sit libero sint ab, in labore maiores eveniet minus?</p>
+
+    <script>
+        var searchField = document.getElementById('busca');
+        var descriptionObject = document.getElementById('descricao');
+
+        var textSearch = descriptionObject.innerHTML;
+
+        function realizaBusca(busca){
+            const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'ig');
+            const ocurrences = textToSearch.match(regex);
+            descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+        }
+
+        searchField.addEventListener('keyup', (e)=>realizaBusca(e.target.value));
+
+    </script>
+</body>
+
+</html>

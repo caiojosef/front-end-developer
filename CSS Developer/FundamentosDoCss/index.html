@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha De CSS</title>
+    <style>
+        /* Seletor por tipo */
+        h1{
+            background-color: darkblue;
+            color: lightgreen;
+        }
+
+        div{
+            background: lightblue;
+        }
+        /* Seletor por ID */
+        #texto-boas-vindas{
+            background: red;
+            color: white;
+        }
+        /* Seletor por Classe */
+        .seletores-mais-comuns{
+            background: blue;
+            color white
+        }
+        /* Seletor universal */
+        *{
+            color: blue;
+            margin: 0;
+        }
+        /* Seletor por atributos */
+        [title] {
+            color: red;
+        }
+        [title="Netflix"] {
+            color: blue;
+        }
+        [title~="Streaming"] {
+            color: lightblue;
+        }
+
+        [href^="http://"]{
+            background: lightblue;
+        }
+        [href$="login"]{
+            background: lightblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Seletores de CSS</h1>
+    <p id="texto-boas-vindas">Bem-Vindo</p><br>
+    <p class="seletores-mais-comuns">No CSS nós possuimos os seletores por ID</p>
+    <div>
+        <ul>
+            <li>
+                <b>Seletor por Tipo:</b> Busca elementos por uma tag HTML específica.
+                <b>Seletor por ID (#):</b> Busca elementos através do  atributo "id"
+                <b>Seletor por Classe (.):</b> Busca elementos através do atributo "class"
+                <b>Seletor Universal(*):</b> Seleciona todos os elementos HTML
+                <b>Seletor de atributo ([atrib]):</b> Seleciona elementos que possuem um atributo específico em nosso documento HTML e conseguimos também buscar atributos com um valor específico
+
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://netflix.com/login" title="Netflix"> Netflix </a> 
+            </li>
+            <li>
+                <a href="http://amazon.com" title="Prime vídeo"> Netflix </a> 
+            </li>
+            <li>
+                <a href="" title="Streaming Spotify"> Netflix </a> 
+            </li>
+            <li>
+                <a > Netflix </a> 
+            </li>
+            <li>
+                <a > Netflix </a> 
+            </li>
+            
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Midias</title>
+</head>
+<body>
+    <div>
+        <h1>Tag Img</h1>
+        <img src="cacto.jpg" width="100">
+        <br>
+        <img src="phoca_thumb_l_image03_grd.png"  width="100">
+        <img src="phoca_thumb_l_image03_grd.png"  width="100" title="Logotipo" alt="Descrição da imagem para acessibilidade">
+    </div>
+
+    <div>
+        <h1>
+            Tag audio
+        </h1>
+        <audio autoplay controls>
+            <source src="videoplayback.m4a">
+        </audio>
+    </div>
+
+    <div>
+        <h1>
+            Tag Vídeo
+        </h1>
+
+        <video autoplay controls width="100">
+            <source src="QUIK_20170502_082338.mp4" >
+            Seu navegador não tem suporte
+        </video>
+    </div>
+
+    <div>
+        <h1>
+            Tag Track
+        </h1>
+
+        <video autoplay controls width="100">
+            <source src="QUIK_20170502_082338.mp4" >
+            Seu navegador não tem suporte
+            <track src="legenda.vtt" kind="captions" srclang="en" />
+            <track default src="legenda-pt.vtt" kind="captions" srclang="pt-br" />
+        </video>        
+    </div>
+
+    <div>
+        <h1>
+            Tag Iframe
+        </h1>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wmRF-lTdxZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
